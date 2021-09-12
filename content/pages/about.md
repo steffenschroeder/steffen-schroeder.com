@@ -12,7 +12,7 @@ I'm passionate about good software design and clean code.
 
 ### By day
 
-In my day job, I work as Senior Software Engineer at [BlueYonder](https://blueyonder.com/) in Hamburg. I help to prepare masses of data for Machine Learning. That help companies
+In my day job, I work as Senior Software Engineer at [BlueYonder](https://blueyonder.com/) in Hamburg. I help to prepare masses of data for Machine Learning. That helps companies to
 make better decisions in their whole supply chain.
 
 Some things I have accomplished in the past:
@@ -25,13 +25,13 @@ Some things I have accomplished in the past:
 - Building the frontend for [Employee Central Position Management](https://blogs.sap.com/2015/03/12/the-successfactors-employee-central-position-management-feature/) and [Company Structure Overview](https://blogs.sap.com/2017/02/24/sap-successfactors-company-structure-overview/)
 - Architect for [Employee Central Position Management](https://blogs.sap.com/2015/03/12/the-successfactors-employee-central-position-management-feature/)
 - Frequent speaker at SAP internal events
-- One of the Youngest participants in the SAP Development Expert Curriculum
+- One of the youngest participants in the SAP Development Expert Curriculum
 - Consecutive highest performance ratings and nominations as _Top Talent_ / _SAP Catalyst_
 
 
 ### By night
 
-In my spare time, I like to contribute to Open Source Projects and learn new things.
+In my spare time, I like to contribute to Open Source projects and learn new things.
 Through the [RaspberryPi](https://www.raspberrypi.org/), I came to [Python](https://www.python.org/). Man, I love this language and the community.
 
 
@@ -41,6 +41,7 @@ I try to give something back by volunteering and giving talks:
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Also, I'm a mentor at [Jugend hackt](https://jugendhackt.org/event-rueckblick/heidelberg-2019/) (see my lightning talk [here](https://media.ccc.de/v/jh19-hd-1002-clean_code)).
+
 ### Get in touch
 If you like to get in touch, you can use:
 
