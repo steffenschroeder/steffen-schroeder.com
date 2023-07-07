@@ -12,7 +12,7 @@ I'm passionate about good software design and clean code.
 
 ### By day
 
-In my day job, I work as Senior Software Engineer at [BlueYonder](https://blueyonder.com/) in Hamburg. I help to prepare masses of data for Machine Learning. That helps companies to
+In my day job, I work as Senior Staff Software Engineer at [BlueYonder](https://blueyonder.com/) in Hamburg. I lead a team of Software Engineers and Data Scientists. They build services that help companies to
 make better decisions in their whole supply chain.
 
 Some things I have accomplished in the past:
