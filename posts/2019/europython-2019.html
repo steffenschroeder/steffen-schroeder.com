@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>EuroPython 2019</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="/theme/css/code_blocks/monokai.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="/theme/css/custom.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="A Summary of my impressions from EuroPython 2019 in Basel">
+
+        <meta name="author" content="Steffen Schröder">
+
+        <meta name="tags" content="Python">
+        <meta name="tags" content="Conference">
+
+	                <meta property="og:locale" content="usa">
+                <meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="Steffen Schröder">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="/author/steffen-schroder.html">
+	<meta property="og:url" content="/posts/2019/europython-2019.html">
+	<meta property="og:title" content="EuroPython 2019">
+	<meta property="article:published_time" content="2019-07-13 00:00:00+02:00">
+            <meta property="og:description" content="A Summary of my impressions from EuroPython 2019 in Basel">
+
+            <meta property="og:image" content="/theme/images/post-bg.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@st_schroeder">
+        <meta name="twitter:title" content="EuroPython 2019">
+
+            <meta name="twitter:image" content="/theme/images/post-bg.jpg">
+
+            <meta name="twitter:description" content="A Summary of my impressions from EuroPython 2019 in Basel">
+</head>
+
+<body class="article-europython-2019">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Steffen Schröder</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/archives">Posts</a></li>
+
+                            <li><a href="/about/">About</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('/theme/images/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>EuroPython 2019</h1>
+                        <span class="meta">Posted by
+                                <a href="/author/steffen-schroder.html">Steffen Schröder</a>
+                             on 13 July 2019
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <p>This year I attended my first EuroPython. It took place in Basel which is close to the place I live.</p>
+<h2>Talks</h2>
+<p>I attended some talks. This is a personal summary for me. Maybe others find this helpful, too.</p>
+<h4>Samuel Colvin - Python's Parallel Programming Possibilities - 4 levels of concurrency</h4>
+<p>Samuel showed 4 kinds of parallelism:</p>
+<ol>
+<li>multiple (virtual) machines</li>
+<li>multiple processes</li>
+<li>multiple threads</li>
+<li>asyncio</li>
+</ol>
+<p>Main take-aways: Different kinds of parallelism require diff</p>
+<p>He showed advantages and disadvantages. There is a great matrix in this talk of when to take which kind of parallelism.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0RaotdCa_j0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4>Petr Stehlík - The dos and don'ts of task queues</h4>
+<p>Task queue help to separate work using producer-consumer pattern. One piece if coding is creating a task, another part is executing it.
+Petr compared working RQ (Redis Queue) with Celery. While initial setup for RQ appears to be simple and Celery appears to be an overkill,
+it quickly turned out that more and more code needs to be written for orchestrating RQ.
+He and the colleagues at Kiwi, basically needed 4 week and 1000 lines of code to get the functionality they required.
+Switching to Celery saved them a lot of boilerplate code.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gV01ZPxWuZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4>Miroslav Šedivý -  A day has only 24±1 hours</h4>
+<p>Miro gave this talk a couple of times. I already saw it twice and there is always something new to learn.
+He started explaining time zones, the usage in Python using <em>pytz</em> and some common traps and pitfalls.
+He continued with some interesting data analysis from <a href="https://www.iana.org/time-zones">the IANA database</a>.</p>
+<p>He showed how this data set is an archive of modern history. Like the time zones in europe changes during the cause of
+World War II.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mHaz5laPyHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4>Paul Everitt - Python 1994</h4>
+<p>Paul gave an extremely entertaining talk about the early days of python.
+By showing some news group entries and just telling a lot of "funny stories", he took us through a very short-while
+travel though the early days of the python community</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vyz7zdGiPVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4>Raphael Pierzina - Advanced pytest</h4>
+<p>Raphael gave an overview on how the pytest plugin system works.
+On the example of automatically adding markers to slow tests, Raphael showed how the pytest hooks work and how one can use this.</p>
+<p>The talk is based on 2 blog posts <em>Customizing your pytest test suite</em> (Part <a href="https://raphael.codes/blog/customizing-your-pytest-test-suite-part-1/">1</a> &amp; <a href="https://raphael.codes/blog/customizing-your-pytest-test-suite-part-2/">2</a>).
+I highly recommend watching the talk and reading the corresponding blog posts</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gJtE-anbcww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="/tag/python.html">Python</a>, <a href="/tag/conference.html">Conference</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="http://twitter.com/st_schroeder">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://github.com/steffenschroeder">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/in/steffenschroeder">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />          <br/>
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+  <br/>
+    Content
+  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

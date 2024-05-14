@@ -1,0 +1,4 @@
+/* For the first paragraph, remove the to margin because block-quote has one */
+blockquote p:first-of-type {
+    margin-top: 0;
+}
