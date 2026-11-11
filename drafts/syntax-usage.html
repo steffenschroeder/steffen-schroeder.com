@@ -131,21 +131,20 @@
 
 <p>And now in java</p>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">open</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">column</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">Field</span><span class="w"> </span><span class="n">fieldToOpen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">board</span><span class="p">.</span><span class="na">getField</span><span class="p">(</span><span class="n">row</span><span class="p">,</span><span class="w"> </span><span class="n">column</span><span class="p">);</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">fieldToOpen</span><span class="p">.</span><span class="na">isOpen</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">fieldToOpen</span><span class="p">.</span><span class="na">open</span><span class="p">();</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fieldToOpen</span><span class="p">.</span><span class="na">isMine</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">openAllFields</span><span class="p">();</span>
-<span class="w">            </span><span class="n">nofifyGameLost</span><span class="p">();</span>
-
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">gameWon</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">notifyGameWon</span><span class="p">();</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="n">notifyBoardChanged</span><span class="p">();</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
 </code></pre></div>
 
+<p>Field fieldToOpen = board.getField(row, column);
+  if (!fieldToOpen.isOpen()) {
+   fieldToOpen.open();
+   if (fieldToOpen.isMine()) {
+    openAllFields();
+    nofifyGameLost();</p>
+<p>} else if (gameWon()) {
+    notifyGameWon();
+   }
+   notifyBoardChanged();
+  }
+ }</p>
 <p>See the <code>notifyBoardChanged()</code> - wonderful</p>
     </article>
 

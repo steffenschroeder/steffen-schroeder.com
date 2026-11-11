@@ -3,35 +3,35 @@
 I was really looking forward to it.&lt;/p&gt;
 &lt;h2&gt;Talks&lt;/h2&gt;
 &lt;p&gt;I attended some talks. For some, I used the description of the talk, for others I summarized in addition what I learned&lt;/p&gt;
-&lt;h4&gt;Carla Hustedt - Algo.Rules - How do we get the ethics into the code?&lt;/h4&gt;
+&lt;h3&gt;Carla Hustedt - Algo.Rules - How do we get the ethics into the code?&lt;/h3&gt;
 &lt;p&gt;Description of the talk:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Algorithms are increasingly relied upon in decision making processes that can have far-reaching implications for all of us. 
-They help doctors diagnose diseases and develop treatment plans. They tell police officers where to patrol. 
-They decide who is going to be invited to the job interview. &lt;/p&gt;
-&lt;p&gt;It is up to us to ensure that algorithmic systems are designed for the benefit of society. 
-But how do we make sure that the individual and collective freedoms and rights that comprise human rights are strengthened, 
+&lt;p&gt;Algorithms are increasingly relied upon in decision making processes that can have far-reaching implications for all of us.
+They help doctors diagnose diseases and develop treatment plans. They tell police officers where to patrol.
+They decide who is going to be invited to the job interview.&lt;/p&gt;
+&lt;p&gt;It is up to us to ensure that algorithmic systems are designed for the benefit of society.
+But how do we make sure that the individual and collective freedoms and rights that comprise human rights are strengthened,
 not undermined, by the use of algorithmic systems? In the keynote I address the complex interconnections between the technology and society, highlighting potential solutions to understanding, building and regulating algorithm decision making.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Ingo Stegmaier - Developers vs. Enterprise&lt;/h4&gt;
+&lt;h3&gt;Ingo Stegmaier - Developers vs. Enterprise&lt;/h3&gt;
 &lt;p&gt;Description of the talk&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This 30-minute talk will give you an overview about project management, success factors and specialties within enterprises. 
+&lt;p&gt;This 30-minute talk will give you an overview about project management, success factors and specialties within enterprises.
 This will be a guide how you promote internal projects and bring them to success within a highly "political" environment.&lt;/p&gt;
-&lt;p&gt;Often developers feel misunderstood while managers are overwhelmed with technical details. 
+&lt;p&gt;Often developers feel misunderstood while managers are overwhelmed with technical details.
 In this talk I'll present how both world can get a better understanding with each other to collaborate better - and without the pains.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;I really enjoyed Ingo's talk and also a small chat with him afterwards. The emphasis on stakeholder management and to have
-a common language is very important. One point I like to add from my experience is, sometimes it's with building a 
+a common language is very important. One point I like to add from my experience is, sometimes it's with building a
 prototype. One might not get management's buy-in for a vague idea or research project. I built a lot of tools after work
-and on the weekends which emerged into widely used (1000+ users) tools. &lt;/p&gt;
+and on the weekends which emerged into widely used (1000+ users) tools.&lt;/p&gt;
 &lt;p&gt;It's like in the quote of &lt;a href="https://en.wikiquote.org/wiki/Grace_Hopper"&gt;Grace Hopper&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;It's easier to ask forgiveness than it is to get permission&lt;/p&gt;
 &lt;/blockquote&gt;</content><category term="Development"/><category term="Python"/><category term="Conference"/></entry><entry><title>EuroPython 2019</title><link href="https://steffen-schroeder.com/posts/2019/europython-2019.html" rel="alternate"/><published>2019-07-13T00:00:00+02:00</published><updated>2019-07-13T00:00:00+02:00</updated><author><name>Steffen Schröder</name></author><id>tag:steffen-schroeder.com,2019-07-13:/posts/2019/europython-2019.html</id><summary type="html">&lt;p&gt;A Summary of my impressions from EuroPython 2019 in Basel&lt;/p&gt;</summary><content type="html">&lt;p&gt;This year I attended my first EuroPython. It took place in Basel which is close to the place I live.&lt;/p&gt;
 &lt;h2&gt;Talks&lt;/h2&gt;
 &lt;p&gt;I attended some talks. This is a personal summary for me. Maybe others find this helpful, too.&lt;/p&gt;
-&lt;h4&gt;Samuel Colvin - Python's Parallel Programming Possibilities - 4 levels of concurrency&lt;/h4&gt;
+&lt;h3&gt;Samuel Colvin - Python's Parallel Programming Possibilities - 4 levels of concurrency&lt;/h3&gt;
 &lt;p&gt;Samuel showed 4 kinds of parallelism:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;multiple (virtual) machines&lt;/li&gt;
@@ -43,7 +43,7 @@ and on the weekends which emerged into widely used (1000+ users) tools. &lt;/p&g
 &lt;p&gt;He showed advantages and disadvantages. There is a great matrix in this talk of when to take which kind of parallelism.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0RaotdCa_j0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h4&gt;Petr Stehlík - The dos and don'ts of task queues&lt;/h4&gt;
+&lt;h3&gt;Petr Stehlík - The dos and don'ts of task queues&lt;/h3&gt;
 &lt;p&gt;Task queue help to separate work using producer-consumer pattern. One piece if coding is creating a task, another part is executing it.
 Petr compared working RQ (Redis Queue) with Celery. While initial setup for RQ appears to be simple and Celery appears to be an overkill,
 it quickly turned out that more and more code needs to be written for orchestrating RQ.
@@ -51,7 +51,7 @@ He and the colleagues at Kiwi, basically needed 4 week and 1000 lines of code to
 Switching to Celery saved them a lot of boilerplate code.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gV01ZPxWuZg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h4&gt;Miroslav Šedivý -  A day has only 24±1 hours&lt;/h4&gt;
+&lt;h3&gt;Miroslav Šedivý -  A day has only 24±1 hours&lt;/h3&gt;
 &lt;p&gt;Miro gave this talk a couple of times. I already saw it twice and there is always something new to learn.
 He started explaining time zones, the usage in Python using &lt;em&gt;pytz&lt;/em&gt; and some common traps and pitfalls.
 He continued with some interesting data analysis from &lt;a href="https://www.iana.org/time-zones"&gt;the IANA database&lt;/a&gt;.&lt;/p&gt;
@@ -59,13 +59,13 @@ He continued with some interesting data analysis from &lt;a href="https://www.ia
 World War II.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/mHaz5laPyHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h4&gt;Paul Everitt - Python 1994&lt;/h4&gt;
+&lt;h3&gt;Paul Everitt - Python 1994&lt;/h3&gt;
 &lt;p&gt;Paul gave an extremely entertaining talk about the early days of python.
 By showing some news group entries and just telling a lot of "funny stories", he took us through a very short-while
 travel though the early days of the python community&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/vyz7zdGiPVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h4&gt;Raphael Pierzina - Advanced pytest&lt;/h4&gt;
+&lt;h3&gt;Raphael Pierzina - Advanced pytest&lt;/h3&gt;
 &lt;p&gt;Raphael gave an overview on how the pytest plugin system works.
 On the example of automatically adding markers to slow tests, Raphael showed how the pytest hooks work and how one can use this.&lt;/p&gt;
 &lt;p&gt;The talk is based on 2 blog posts &lt;em&gt;Customizing your pytest test suite&lt;/em&gt; (Part &lt;a href="https://raphael.codes/blog/customizing-your-pytest-test-suite-part-1/"&gt;1&lt;/a&gt; &amp;amp; &lt;a href="https://raphael.codes/blog/customizing-your-pytest-test-suite-part-2/"&gt;2&lt;/a&gt;).
