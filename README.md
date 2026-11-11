@@ -12,11 +12,11 @@ make stopserver
 
 Deploy:
 Push to `main` or manually run the **Deploy GitHub Pages** workflow. It installs
-dependencies from `uv.lock`, builds the production site with uv, and deploys to
-GitHub Pages using the repository's `GITHUB_TOKEN` secret.
+dependencies from `uv.lock`, builds the production site with uv, and pushes the
+generated site to `gh-pages` using the repository's `GITHUB_TOKEN` secret.
 
 In the repository's **Settings → Pages → Build and deployment**, select
-**GitHub Actions** as the source. The build preserves `content/extra/CNAME` for
+**Deploy from a branch**, with branch `gh-pages` and folder `/ (root)`. The build preserves `content/extra/CNAME` for
 the custom domain. Commit `pyproject.toml` and `uv.lock` along with the workflow.
 
 
