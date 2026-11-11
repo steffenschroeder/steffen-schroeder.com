@@ -11,8 +11,13 @@ make stopserver
 ```
 
 Deploy:
-`make github` update the `gh-pages`branch automatically
-*Better* just push to master and let travis to the job
+Push to `main` or manually run the **Deploy GitHub Pages** workflow. It installs
+dependencies from `uv.lock`, builds the production site with uv, and deploys to
+GitHub Pages using the repository's `GITHUB_TOKEN` secret.
+
+In the repository's **Settings → Pages → Build and deployment**, select
+**GitHub Actions** as the source. The build preserves `content/extra/CNAME` for
+the custom domain. Commit `pyproject.toml` and `uv.lock` along with the workflow.
 
 
 ### Adding code

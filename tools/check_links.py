@@ -1,3 +1,12 @@
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "lxml-html-clean>=0.4.6",
+#     "requests>=2.34.2",
+#     "requests-html>=0.10.0",
+# ]
+# ///
+
 # based on https://raw.githubusercontent.com/pyvideo/pyvideo/master/check_links.py
 import sys
 from argparse import ArgumentParser
