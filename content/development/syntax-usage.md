@@ -5,9 +5,7 @@ Status: Draft
 Category: Development
 Tags: Internal, pelican
 
-
 # This internal page shows some useful syntax usages
-
 
 and this is the text
 
@@ -19,24 +17,22 @@ and this is the text
             os.makedirs(DEPLOY_PATH)
             # Hello World
 
-
 And now in java
 
     :::java
     public void open(int row, int column) {
-		Field fieldToOpen = board.getField(row, column);
-		if (!fieldToOpen.isOpen()) {
-			fieldToOpen.open();
-			if (fieldToOpen.isMine()) {
-				openAllFields();
-				nofifyGameLost();
+  Field fieldToOpen = board.getField(row, column);
+  if (!fieldToOpen.isOpen()) {
+   fieldToOpen.open();
+   if (fieldToOpen.isMine()) {
+    openAllFields();
+    nofifyGameLost();
 
-			} else if (gameWon()) {
-				notifyGameWon();
-			}
-			notifyBoardChanged();
-		}
-	}
-
+   } else if (gameWon()) {
+    notifyGameWon();
+   }
+   notifyBoardChanged();
+  }
+ }
 
 See the ```notifyBoardChanged()``` - wonderful

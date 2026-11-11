@@ -73,7 +73,6 @@ target/
 .ipynb_checkpoints
 
 # pyenv
-.python-version
 
 # celery beat schedule file
 celerybeat-schedule
@@ -112,3 +111,6 @@ output/
 __pycache__/
 output/
 .idea/
+
+# Tool caches
+.ruff_cache/

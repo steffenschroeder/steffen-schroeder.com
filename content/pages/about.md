@@ -28,19 +28,18 @@ Some things I have accomplished in the past:
 - One of the youngest participants in the SAP Development Expert Curriculum
 - Consecutive highest performance ratings and nominations as _Top Talent_ / _SAP Catalyst_
 
-
 ### By night
 
 In my spare time, I like to contribute to Open Source projects and learn new things.
 Through the [RaspberryPi](https://www.raspberrypi.org/), I came to [Python](https://www.python.org/). Man, I love this language and the community.
 
-
 For the community, I like to attend Python conferences like [PyConDE](https://de.pycon.org/) and [EuroPython]({filename}/development/europython2019.md).
 I try to give something back by volunteering and giving talks.
 
-Also, I'm a mentor at [Jugend hackt](https://jugendhackt.org/event-rueckblick/heidelberg-2019/) (see my lightning talk [here](https://media.ccc.de/v/jh19-hd-1002-clean_code)).
+Also, I'm a mentor at [Jugend hackt](https://jugendhackt.org/event-rueckblick/heidelberg-2019/) (see my lightning talk [my lightning talk at Jugend hackt](https://media.ccc.de/v/jh19-hd-1002-clean_code)).
 
 ### Get in touch
+
 If you like to get in touch, you can use:
 
 - Twitter: [@st_schroeder](https://twitter.com/st_schroeder)

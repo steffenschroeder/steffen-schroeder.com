@@ -3,3 +3,26 @@ name = "steffen-schroeder-com"
 version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = ["pelican[markdown]>=4.9"]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3",
+    "pymarkdownlnt==0.9.40",
+    "ruff==0.17.3",
+]
+
+[tool.ruff]
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Pelican's production config inherits the base settings via a wildcard import.
+"publishconf.py" = ["E402", "F403"]
+
+[tool.pymarkdown]
+# Pelican supplies titles and permits long prose and embedded HTML.
+plugins.md041.enabled = false
+plugins.md013.enabled = false
+plugins.md033.enabled = false

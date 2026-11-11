@@ -4,14 +4,15 @@
 #     "lxml-html-clean>=0.4.6",
 #     "requests>=2.34.2",
 #     "requests-html>=0.10.0",
+#     "tqdm>=4.67",
 # ]
 # ///
 
 # based on https://raw.githubusercontent.com/pyvideo/pyvideo/master/check_links.py
 import sys
 from argparse import ArgumentParser
+from collections.abc import Generator
 from queue import Queue
-from typing import Generator
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -54,7 +55,6 @@ def collect_links(url: str, session: HTMLSession):
     to_visit.put(url)
 
     while not to_visit.empty():
-
         address = to_visit.get()
         if address not in visited_links:
             extracted = extract_links(address, session)

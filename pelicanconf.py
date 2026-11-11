@@ -8,8 +8,8 @@ PATH = "content"
 TIMEZONE = "Europe/Paris"
 
 DEFAULT_LANG = "en"
-LOCALE = ('usa',  'en_US')
-DEFAULT_DATE_FORMAT = '%d %B %Y'
+LOCALE = ("usa", "en_US")
+DEFAULT_DATE_FORMAT = "%d %B %Y"
 
 THEME = "theme"
 
@@ -52,7 +52,7 @@ PAGE_SAVE_AS = "{slug}/index.html"
 ## THEME
 COLOR_SCHEME_CSS = "monokai.css"
 MARKUP = ("markdown",)
-CSS_OVERRIDE = 'theme/css/custom.css'
+CSS_OVERRIDE = "theme/css/custom.css"
 
 
 # Add items to top menu before pages

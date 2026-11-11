@@ -1,5 +1,5 @@
-PY?=python3
-PELICAN?=uv run pelican
+PY?=uv run --locked python
+PELICAN?=uv run --locked pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -38,17 +38,18 @@ ifeq ($(RELATIVE), 1)
 endif
 
 help:
+	@echo '   make lint / format                  check / fix Python and Markdown   '
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
 	@echo '   make html                           (re)generate the web site          '
-	@echo '   make html-dev                       (re)generate but with relative link'
+	@echo '   make RELATIVE=1 html                generate with relative links'
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
 	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
 	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
-	@echo '   make devserver [PORT=8000]          start devlopment server            '
+	@echo '   make devserver [PORT=8000]          start development server            '
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 	@echo '   make dropbox_upload                 upload the web site via Dropbox    '
@@ -103,3 +104,17 @@ github: clean publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ftp_upload github
+
+MARKDOWNLINT = uv run --locked pymarkdown
+
+lint:
+	uv run --locked ruff check .
+	uv run --locked ruff format --check .
+	$(MARKDOWNLINT) scan --recurse --respect-gitignore .
+
+format:
+	uv run --locked ruff check --fix .
+	uv run --locked ruff format .
+	$(MARKDOWNLINT) fix --recurse --respect-gitignore .
+
+.PHONY: lint format
