@@ -4,6 +4,10 @@ version = "0.1.0"
 requires-python = ">=3.14"
 dependencies = ["pelican[markdown]>=4.9"]
 
+[tool.uv]
+# Override Pelican 4.12's upper bound; remove when upstream permits Pygments 2.20+.
+override-dependencies = ["pygments>=2.20.0,<3"]
+
 [dependency-groups]
 dev = [
     "pre-commit>=4.3",
